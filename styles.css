@@ -150,7 +150,7 @@ html {
     border-radius: 20px;
     background: rgba(33, 33, 33, 0.6);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 9px solid rgba(255, 234, 0);
     opacity: 0;
     animation: fadeIn var(--transition-medium) forwards;
 }
