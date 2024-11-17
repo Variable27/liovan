@@ -75,7 +75,7 @@ html {
 /* Profile Image and Name Section */
 .profile-info {
     position: absolute;
-    top: 96px; /* 1 inch from the top */
+    top: 90px; /* 1 inch from the top */
     left: 20px;
     display: flex;
     align-items: center;
