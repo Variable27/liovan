@@ -1,0 +1,208 @@
+/* Custom Properties for easy theming */
+:root {
+    --primary: #00bcd4; /* Blue */
+    --secondary: #ffeb3b; /* Yellow */
+    --accent: #ffffff; /* White */
+    --dark: #121212;
+    --text-primary: #e0e0e0;
+    --text-secondary: #bdbdbd;
+    --transition-fast: 0.3s;
+}
+
+/* General Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and background styles with pattern */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary);
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary) 25%, var(--secondary) 25%, var(--secondary) 50%, var(--primary) 50%, var(--primary) 75%, var(--secondary) 75%, var(--primary) 100%);
+    background-size: 200% 200%; /* Pattern on the background */
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* Fade-in effect for body */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* Cover Photo with Overlay */
+.cover-photo {
+    position: relative;
+    width: 100%;
+    height: 250px; /* Reduced height for simplicity */
+    overflow: hidden;
+    background-color: #333;
+    border: 5px solid var(--primary); /* Border around the cover photo */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Profile Image and Name Section */
+.profile-info {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s 0.3s forwards; /* Fade-in for profile info */
+}
+
+.profile-picture {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid var(--primary); /* Border around the profile picture */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border: 4px solid var(--dark);
+}
+
+.name-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.name-container .subtitle {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+}
+
+/* Navigation Bar moved to the right */
+.navbar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    transition: color var(--transition-fast);
+}
+
+.navbar a:hover {
+    color: var(--secondary);
+}
+
+/* Modern Section Styling with Glassmorphism */
+.section {
+    padding: 4rem 2rem;
+    margin: 3rem auto;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    background: rgba(33, 33, 33, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s 0.5s forwards; /* Fade-in for sections */
+}
+
+.section h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary); /* Blue background */
+    color: var(--accent); /* White text */
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Footer Logo (NISU) */
+.footer .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+        top: 120px;
+    }
+
+    .name-container {
+        text-align: center;
+    }
+
+    .navbar {
+        position: static;
+        margin-top: 2rem;
+        justify-content: center;
+    }
+
+    .section {
+        margin: 2rem 1rem;
+        padding: 2rem 1rem;
+    }
+}
