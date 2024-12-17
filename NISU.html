@@ -3,227 +3,388 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Northern Iloilo State University (NISU)</title>
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Northern Iloilo State University - An icon of hope for development, offering quality education and innovative research.">
-    <meta name="keywords" content="NISU, Northern Iloilo State University, higher education, Iloilo, academic excellence, research, extension services">
-    <meta name="author" content="Northern Iloilo State University">
+    <!-- Enhanced Metadata for NISU -->
+    <title>Northern Iloilo State University (NISU) - Empowering Education, Transforming Lives</title>
     
-    <!-- Open Graph / Social Media Tags -->
-    <meta property="og:title" content="Northern Iloilo State University">
+    <!-- Comprehensive SEO Metadata -->
+    <meta name="description" content="Northern Iloilo State University (NISU) is a premier educational institution committed to academic excellence, innovative research, and holistic student development in Iloilo, Philippines.">
+    
+    <!-- Expanded Keywords for SEO -->
+    <meta name="keywords" content="NISU, Northern Iloilo State University, higher education, Iloilo, Philippines, academic excellence, state university, research, community development, undergraduate programs, graduate studies, computer science, engineering, management, education">
+    
+    <!-- Open Graph Metadata for Social Media Sharing -->
+    <meta property="og:title" content="Northern Iloilo State University (NISU)">
+    <meta property="og:description" content="A premier educational institution empowering students through quality education and innovative research.">
     <meta property="og:type" content="educational.university">
     <meta property="og:url" content="https://www.nisu.edu.ph">
-    <meta property="og:description" content="NISU: Catalyzing global competitiveness and academic innovation">
+    
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="NISU - Transforming Education">
+    <meta name="twitter:description" content="Northern Iloilo State University: Shaping futures through comprehensive academic programs.">
+    
+    <!-- Geotag for Local SEO -->
+    <meta name="geo.region" content="PH-Iloilo">
+    <meta name="geo.placename" content="Estancia, Iloilo">
+    
+    <!-- Author and Copyright -->
+    <meta name="author" content="Northern Iloilo State University">
+    <meta name="copyright" content="© 2024 Northern Iloilo State University">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
     
     <style>
+        /* Updated Color Palette with Accessibility and Modern Design */
+        :root {
+            /* Vibrant, Professional Color Scheme */
+            --primary-color: #0077be;        /* Deep Sapphire Blue */
+            --primary-color-light: #00a8e8;  /* Bright Sky Blue */
+            --secondary-color: #4a4a4a;      /* Sophisticated Dark Gray */
+            --accent-color: #ffa500;         /* Energetic Orange */
+            
+            /* Enhanced Background and Text Colors */
+            --bg-primary: #f4f7f6;           /* Soft Mint Gray */
+            --bg-secondary: #ffffff;         /* Pure White */
+            --text-primary: #2c3e50;         /* Deep Navy Blue */
+            --text-secondary: #34495e;       /* Slightly Lighter Navy */
+            
+            /* Gradients and Shadows for Depth */
+            --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-color-light));
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            
+            /* Typography */
+            --font-primary: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-secondary: 'Open Sans', Arial, Helvetica, sans-serif;
+        }
+
+        /* Modern Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: var(--font-primary);
             line-height: 1.6;
-            background-color: #f4f4f4;
+            color: var(--text-primary);
+            background-color: var(--bg-primary);
         }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        /* Header Styles */
+
+        /* Enhanced Navigation with Modern Styling */
         header {
-            background-color: #1a5f7a;
-            color: white;
+            background: var(--gradient-primary);
+            box-shadow: var(--box-shadow);
             padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        .header-content {
+
+        nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
         }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        nav ul li {
-            margin-left: 20px;
-        }
-        nav ul li a {
-            color: white;
+
+        nav a {
+            color: var(--bg-secondary);
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #90caf9;
-        }
-
-        /* Main Content Styles */
-        main {
-            display: flex;
-            padding: 2rem 0;
-        }
-        .news-section {
-            flex: 2;
-            margin-right: 2rem;
-        }
-        .news-card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            padding: 1rem;
-            margin-bottom: 1rem;
-        }
-        .news-card h3 {
-            color: #1a5f7a;
-            margin-bottom: 0.5rem;
-        }
-        .sidebar {
-            flex: 1;
-            background-color: white;
-            border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .sidebar h2 {
-            color: #1a5f7a;
-            margin-bottom: 1rem;
-        }
-        .sidebar ul {
-            list-style: none;
-        }
-        .sidebar ul li {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid #f1f1f1;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
         }
 
-        /* Footer Styles */
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Section Styling with Modern Design */
+        section {
+            background-color: var(--bg-secondary);
+            margin: 2rem 0;
+            padding: 3rem 1rem;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+
+        /* Featured News Grid with Card Design */
+        .featured-news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .featured-news article {
+            background-color: var(--bg-primary);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .featured-news article:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--box-shadow);
+        }
+
+        /* Footer with Modern, Clean Design */
         footer {
-            background-color: #12415c;
-            color: white;
-            padding: 2rem 0;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-        }
-        .footer-section {
-            flex: 1;
-            margin-right: 1rem;
-        }
-        .footer-section h3 {
-            margin-bottom: 1rem;
+            background-color: var(--secondary-color);
+            color: var(--bg-secondary);
+            padding: 3rem 1rem;
+            text-align: center;
         }
 
-        /* Responsive Design */
+        /* Responsive Typography */
         @media (max-width: 768px) {
-            main {
-                flex-direction: column;
+            body {
+                font-size: 14px;
             }
-            .news-section, .sidebar {
-                margin-right: 0;
-                margin-bottom: 1rem;
-            }
-            nav ul {
+
+            nav {
                 flex-direction: column;
                 align-items: center;
-            }
-            nav ul li {
-                margin: 10px 0;
-            }
-            .footer-content {
-                flex-direction: column;
-            }
-            .footer-section {
-                margin-bottom: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">NISU</div>
+<header>
+        <div class="container">
             <nav>
-                <ul>
-                    <a href="index.html">Home</a>
-        <a href="NISU.html">NISU</a>        
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contacts.html">Contact</a>
-                </ul>
-            </nav>
+                 <a href="index.html" title="Resume of John Paul Bantillo" itemprop="url">Home</a>
+                <a href="NISU.html" title="NISU CICS" itemprop="url">NISU</a>
+                <a href="portfolio.html" title="About John Paul Bantillo - NISU CICS Student" itemprop="url">Portfolio</a>
+                           </nav>
         </div>
     </header>
 
-    <main class="container">
-        <section class="news-section">
-            <h2>Latest News</h2>
-            <div class="news-card">
-                <h3>NCAA, NISU CoEd collaborate in launching book Lemlunay</h3>
-                <p>In collaboration with the National Commission for Culture and the Arts (NCAA) and Northern...</p>
+    <main>
+        <section id="home" class="container">
+            <h2>Welcome to Northern Iloilo State University</h2>
+            <div class="featured-news">
+                <article>
+                    <h3>NCAA, NISU CoEd Collaborate in Launching Book Lemlunay</h3>
+                    <p>In collaboration with the National Commission for Culture and the Arts (NCAA) and Northern Iloilo State University's College of Education, a significant book launch takes place...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=74:ncaa-nisu-coed-collaborate-in-launching-book-lemlunay&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU Collaborates with FilPas and SeeMeSol</h3>
+                    <p>Expanding digital transformation and career opportunities for graduates through strategic partnerships...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=72:nisu-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU Takes Part in Estancia's 106th Founding Anniversary</h3>
+                    <p>Northern Iloilo State University (NISU)—Main Campus demonstrated support for the 106th Founding Anniversary of Estancia...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=73:nisu-collaborates-with-filpas-and-seemesol-expanding-digital-transformation-and-career-opportunities-for-graduates-2&catid=9:news-and-events" class="read-more">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU continues to open tracks for the Intercampus Sports Meet 2024, fosters a spirit of camaraderie</h3>
+                    <p>NISU continues to open tracks for the Intercampus Sports Meet 2024, fosters a spirit of camaraderie       Now on its third day, this year’s Northern...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=71:lin-ay-sang-iloilo24-graces-presidents-office-in-a-courtesy-call-2&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>Lin-ay sang Iloilo'24 graces president's office in a courtesy call</h3>
+                    <p>Lin-ay sang Iloilo'24 graces president's office in a courtesy call   Newly crowned Lin-ay sang Iloilo 2024 paid a courtesy visit to the university...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=70:lin-ay-sang-iloilo24-graces-presidents-office-in-a-courtesy-call&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU holds ISO 9001:2015 Interim Re-Certification Audit</h3>
+                    <p>NISU holds ISO 9001:2015 Interim Re-Certification Audit   Northern Iloilo State University (NISU) held a two-day International Organization for...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=69:nisu-holds-iso-9001-2015-interim-re-certification-audit&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>CSCRO6 awards CNA Certificate of Registration to NISU, NIPSCEAI</h3>
+                    <p>CSCRO6 awards CNA Certificate of Registration to NISU, NIPSCEAI   Dir. John Esar David, Provincial Director of the Civil Service Commission, visits...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=68:cscro6-awards-cna-certificate-of-registration-to-nisu-nipsceai&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU joins tree growing for a cause, a collaboration of DENR, CSC RO VI</h3>
+                    <p>NISU joins tree growing for a cause, a collaboration of DENR, CSC RO VI   Northern Iloilo State University (NISU) recently joined in the conduct of...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=67:blue-marlins-bag-triumph-in-bracket-a-vs-dole-secure-spot-in-the-championship-game-7&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU alumni assoc spearheads tree planting activity; highlights its commitment to environment stewardship</h3>
+                    <p>NISU alumni assoc spearheads tree planting activity; highlights its commitment to environment stewardship Estancia, Iloilo-Northern Iloilo State...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=60:blue-marlins-bag-triumph-in-bracket-a-vs-dole-secure-spot-in-the-championship-game-6&catid=9:news-and-events">Read More</a>
+                </article>
+                <article>
+                    <h3>NISU marks MOU with UKI; President Gerardo claims this signing a way for more academic opportunities</h3>
+                    <p>NISU marks MOU with UKI; President Gerardo claims this signing a way for more academic opportunities   Northern Iloilo State University (NISU)...</p>
+                    <a href="https://www.nisu.edu.ph/index.php?view=article&id=59:blue-marlins-bag-triumph-in-bracket-a-vs-dole-secure-spot-in-the-championship-game-5&catid=9:news-and-events">Read More</a>
+                </article>
             </div>
-            <div class="news-card">
-                <h3>NISU takes part in Estancia's 106th founding anniversary</h3>
-                <p>Northern Iloilo State University (NISU)—Main Campus showed support to the 106th Founding...</p>
-            </div>
-            <div class="news-card">
-                <h3>NISU collaborates with FilPas and SeeMeSol</h3>
-                <p>Expanding digital transformation and career opportunities for graduates</p>
-            </div>
-            <div class="news-card">
-                <h3>NISU continues to open tracks for the Intercampus Sports Meet 2024, fosters a spirit of camaraderie</h3>
-                <p>NISU continues to open tracks for the Intercampus Sports Meet 2024, fosters a spirit of camaraderie       Now on its third day, this year’s Northern...</p>
-            </div>
-            <div class="news-card">
-                <h3>Lin-ay sang Iloilo'24 graces president's office in a courtesy call</h3>
-                <p>Lin-ay sang Iloilo'24 graces president's office in a courtesy call   Newly crowned Lin-ay sang Iloilo 2024 paid a courtesy visit to the university...</p>
-            </div>
-            <div class="news-card">
-                <h3>NISU holds ISO 9001:2015 Interim Re-Certification Audit</h3>
-                <p>NISU holds ISO 9001:2015 Interim Re-Certification Audit   Northern Iloilo State University (NISU) held a two-day International Organization for...</p>
-            </div>
-            <div class="news-card">
-                <h3>CSCRO6 awards CNA Certificate of Registration to NISU, NIPSCEAI</h3>
-                <p>CSCRO6 awards CNA Certificate of Registration to NISU, NIPSCEAI   Dir. John Esar David, Provincial Director of the Civil Service Commission, visits...</p>
             </div>
         </section>
 
-        <aside class="sidebar">
-            <h2>Highlighted Events</h2>
-            <ul>
-                <li>Catalyzing Global Competitiveness</li>
-                <li>Investiture of the First University President</li>
-                <li>Gender Sensitivity Training for NISU Employees</li>
-                <li>In-House Research Review 2023</li>
-                <li>President's Memorandum</li>
-            </ul>
-        </aside>
+        <section id="about" class="container">
+            <h2>About NISU</h2>
+            <div class="about-content">
+                <p>Northern Iloilo State University (NISU) stands as a beacon of educational excellence in the Iloilo region. Committed to holistic development, we strive to provide world-class education that empowers students to become global citizens and catalysts of change.</p>
+                <p><strong>Our Vision:</strong> A globally competitive State University in Asia.</p>
+                <p><strong>Our Mission:</strong>Human resources development through quality and relevant education, environment-friendly modern technologies and preservation of Filipino values and culture for sustainable and improved quality of life..</p>
+            </div>
+        </section>
+
+        <section id="administration" class="container">
+            <h2>Administration</h2>
+            <div class="leadership-team">
+                <h3>University Leadership</h3>
+                <p>Led by President Gerardo, NISU is committed to academic excellence and community development.</p>
+            </div>
+        </section>
+
+        <section id="academics" class="container">
+            <h2>Academics</h2>
+            <div class="academic-offerings">
+                <h2>Colleges and Departments</h2>
+                <ul>
+                    <h3>School of Education</h3>  <br>
+     Doctor of Education    COPC No. 020, s. 2022<br>
+     Master of Arts in Teaching (MAT) Major in: English/ Science/ <br>Mathematics   COPC No. 018, s. 2022<br>
+     Master of Arts in Education (MAEd)   Major in Educational <br>Management   COPC No. 019, s. 2022<br>
+     Bachelor of Elementary Educ(BEEd)  COPC No. 17, s.2015<br>
+     Bachelor of Secondary Educ(BSEd) Majors in Filipino / English/ Math/<br>Social Studies COPC No. 16, s.2015<br><br>
+     
+<h3>Institute of Information and Computer Studies  <br>  </h3>
+    BS Computer Science COPC No. 67, s.2015<br>
+    BS Information Technology   COPC No. 68, s.2015<br><br>
+     
+<h3>School of Engineering    <br></h3>
+    BS in Civil Engineering     COPC No. 066, s.2020<br>
+    BS in Mechanical Engineering    COPC No. 067, s.2020<br><br>
+     
+<h3>School of Management     <br></h3>
+     Master in Public Administration     <br>
+     Bachelor of Public Administration  COPC No. 13, s.2020<br>
+     BS Business Administration     COPC No. 59, s.2015<br><br>
+          Major in Marketing Mgt.    <br>
+     BS Entrepreneurship    COPC No. 60, s.2020<br>
+     BS Tourism (Major in Resort Mgt.   COPC No. 62, s.2015<br><br>
+     
+<h3>School of Fisheries  <br></h3>
+     BS Fisheries   COPC No. 36, s.2020<br><br>
+     
+<h3>School of Arts and Science   <br></h3>
+     BA English COPC No. 16, s.2020<br>
+     BA Economics   COPC No. 22, s.2020<br>
+     BS Biology COPC No. 37, s.2020<br>
+    Diploma in Midwifery    COPC No. 23, s.2021<br><br>
+     
+<h3>School of Industrial Technology  <br></h3>
+     BS Industrial Technology         <br>                            Majors in Automotive Tech/ Drafting Tech/Electrical Tech  COPC No. 002, s.2017<br>
+                </ul>
+            </div>
+        </section>
+
+        <section id="research" class="container">
+            <h2>Research and Extension</h2>
+            <div class="research-highlights">
+                <h3>Research Focus Areas</h3>
+                <ul>
+                    <li>Sustainable Development</li>
+                    <li>Digital Transformation</li>
+                    <li>Community Empowerment</li>
+                    <li>Environmental Stewardship</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="campuses" class="container">
+            <h2>External Campuses</h2>
+            <div class="campus-locations">
+                <ul>
+                    <li>Estancia Main Campus</li>
+                    <li>Ajuy Campus</li>
+                    <li>Batad Campus</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="international" class="container">
+            <h2>International Collaborations</h2>
+            <div class="collaboration-highlights">
+                <ul>
+                    <li>Memorandum of Understanding with UKI</li>
+                    <li>Global Academic Partnerships</li>
+                    <li>Student Exchange Programs</li>
+                    <li>International Research Initiatives</li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
+        <div class="container">
+            <div class="contact-info">
+                <h3>Contact NISU</h3>
                 <p>Phone: 3970-314</p>
                 <p>Email: nisuadmin@nisu.edu.ph</p>
             </div>
-            <div class="footer-section">
+            <div class="quick-links">
                 <h3>Quick Links</h3>
-                <ul>
-                    <li>Online Services</li>
-                    <li>Job Vacancies</li>
-                    <li>Sara Campus</li>
-                </ul>
+                <a href="http://nisu-ehris.net:7676/login">Online Services</a>
+                <a href="https://drive.google.com/file/d/1xn8iystAstQijv7mQDtmfpB64LVC_QOE/view">Job Vacancies</a>
+                <a href="https://www.nisu.edu.ph/index.php/administration/good-governance/agency-procurement-compliance-and-performance-indicators">Procurement</a>
             </div>
-            <div class="footer-section">
-                <h3>Mission Statement</h3>
-                <p>NISU: An Icon of Hope for Development</p>
+            <div class="backlinks">
+    <p>Explore related resources:</p>
+    <ul>
+        <li>
+            <a href="https://www.nisu.edu.ph/" target="_blank" rel="noopener noreferrer" title="Visit NISU's official website">
+                Northern Iloilo State University (NISU)
+            </a>
+        </li>
+        <li>
+            <a href="https://cics.nisu.edu.ph/" target="_blank" rel="noopener noreferrer" title="Explore CICS at NISU">
+                College of Information and Computing Sciences (CICS)
+            </a>
+        </li>
+        <li>
+            <a href="https://www.johnpaulbantillo.site/" target="_blank" rel="noopener noreferrer" title="Visit John Paul Bantillo's Portfolio">
+                John Paul Bantillo's Portfolio
+            </a>
+        </li>
+    </ul>
+</div>
+
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+
+                    <h2>FAQ Section</h2>
+            <h3><a href="resume.html" style="color: green;" class="read-more">Who is John Paul?</a></h3>
+            <h3><a href="contact.html" style="color: green;" class="read-more">How to contact John Paul?</a></h3>
+            <h3><a href="NISU.html" style="color: green;" class="read-more">What is NISU?</a></h3>
+            <h3><a href="CICS1.html" style="color: green;" class="read-more">What is CICS or Customer Information Control System?</a></h3>
+            <h3><a href="CICS2.html" style="color: green;" class="read-more">What is Customer Information Control System?</a></h3>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Northern Iloilo State University. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
